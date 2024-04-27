@@ -10,10 +10,11 @@ const TAXA_DE_ENCOLHIMENTO = .99
 const ROTATION_SPEED = 4
 var rodando
 var direction
+const PRE_CACOS = preload("res://scenes/Cacos.tscn")
 
 func _ready():
 	$AnimationPlayer.play("default")
-	randomize()	
+	randomize()
 	start_x = get_random_start_x()
 	start_y = get_random_start_y()
 	side_speed = get_random_side_speed()
@@ -58,7 +59,7 @@ func ir_para_o_lado(delta):
 func encolher():
 	scale *= TAXA_DE_ENCOLHIMENTO
 	
-func rodar(delta):		
+func rodar(delta):
 	if direction:
 		rotation += ROTATION_SPEED * delta
 	else:
@@ -68,8 +69,14 @@ func check_max_y():
 	if ! subindo and position.y > start_y:
 		queue_free()
 
-func _on_Button_button_down():
+func _on_Button_button_down():	
 	die()
 	
 func die():
+	mostra_cacos()
 	queue_free()
+	
+func mostra_cacos():
+	var cacos = PRE_CACOS.instance()
+	get_parent().add_child(cacos)
+	cacos.position = position
