@@ -189,7 +189,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -67, 16 ), Vector2( -2080, -880 ) ]
+"values": [ Vector2( -67, 16 ), Vector2( -400, -280 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("../Sprite:rotation_degrees")
@@ -213,7 +213,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 31, 4 ), Vector2( 320, -1960 ) ]
+"values": [ Vector2( 31, 4 ), Vector2( 440, -320 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("../Sprite2:rotation_degrees")
@@ -249,7 +249,7 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 0.0247623, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 120, 16 ), Vector2( 119, 13 ), Vector2( 3120, 400 ) ]
+"values": [ Vector2( 120, 16 ), Vector2( 119, 13 ), Vector2( 440, 200 ) ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("../Sprite4:rotation_degrees")
@@ -285,7 +285,7 @@ tracks/9/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 16, 96 ), Vector2( -400, 2120 ) ]
+"values": [ Vector2( 16, 96 ), Vector2( -320, 400 ) ]
 }
 tracks/10/type = "value"
 tracks/10/path = NodePath("../Sprite3:rotation_degrees")
@@ -334,7 +334,6 @@ texture = ExtResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath(".")
-playback_speed = 0.5
 anims/RESET = SubResource( 1 )
 anims/explode = SubResource( 2 )
 
