@@ -77,6 +77,7 @@ func add_point() -> void:
 	get_parent().add_point()
 	
 func die() -> void:
+	get_parent().toca_som_de_grito()
 	mostra_cacos()
 	queue_free()
 	

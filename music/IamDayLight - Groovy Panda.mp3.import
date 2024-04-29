@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/IamDayLight - Groovy Panda.mp3-0290e629169021adacd4dae989d101b6.mp3str"
+
+[deps]
+
+source_file="res://music/IamDayLight - Groovy Panda.mp3"
+dest_files=[ "res://.import/IamDayLight - Groovy Panda.mp3-0290e629169021adacd4dae989d101b6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
